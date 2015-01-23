@@ -30,6 +30,7 @@
         {
             this.btnClose = new System.Windows.Forms.Button();
             this.outputPanel = new System.Windows.Forms.ListBox();
+            this.lblVersion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnClose
@@ -51,20 +52,32 @@
             this.outputPanel.Size = new System.Drawing.Size(578, 405);
             this.outputPanel.TabIndex = 2;
             // 
+            // lblVersion
+            // 
+            this.lblVersion.AutoSize = true;
+            this.lblVersion.Location = new System.Drawing.Point(12, 453);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(42, 13);
+            this.lblVersion.TabIndex = 3;
+            this.lblVersion.Text = "Version";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(602, 478);
+            this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.outputPanel);
             this.Controls.Add(this.btnClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMain";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Windows Icon Overlay Manager";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -72,6 +85,7 @@
 
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.ListBox outputPanel;
+        private System.Windows.Forms.Label lblVersion;
     }
 }
 
